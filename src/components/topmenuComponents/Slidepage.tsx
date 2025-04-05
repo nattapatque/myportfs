@@ -21,7 +21,7 @@ export default function Slidepage({isOpen, onClose}: SlidePageProps){
                 
                 <div className="flex flex-col flex-1 items-center space-y-10">
                     <div className="text-xl font-semibold">Nattapat <br />Daengkongkaew</div>
-                    <div className="bg-gradient-to-r from-blue3 to-blue2 text-white hover:scale-110 font-semibold px-5 py-3 cursor-pointer shadow-lg duration-150">Download CV</div>
+                    <div className="bg-gradient-to-r from-blue3 to-blue2 text-white hover:scale-110 font-semibold px-5 py-3 cursor-pointer shadow-lg duration-150">Download Resume</div>
                 </div>
                 <div className="flex flex-3 flex-col gap-10 md:text-8xl text-6xl font-bold md:items-start items-center">
                     <div className="hover:scale-110 duration-150 cursor-pointer">Experience</div>

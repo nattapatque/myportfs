@@ -1,4 +1,7 @@
 import IG from "../components/iconComponents/IG";
+import Phone from "../components/iconComponents/Phone";
+import Github from "../components/iconComponents/Github";
+import Linkedin from "../components/iconComponents/Linkedin";
 
 export default function Home() {
   return (
@@ -27,8 +30,16 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-white pb-10 px-20 w-full flex justify-end">
-          {/* <IG></IG> */}
+        <div className="bg-white pb-10 px-20 w-full flex flex-col justify-end gap-5">
+          <div className="text-blue2 text-xl flex justify-end">
+            nattapat.daengkongkaew@gmail.com
+          </div>
+          <div className="text-blue1 flex flex-row justify-end gap-5">
+            <IG></IG>
+            <Phone></Phone>
+            <Github></Github>
+            <Linkedin></Linkedin>
+          </div>
         </div>
 
       </div>
