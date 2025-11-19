@@ -17,8 +17,8 @@ export default function RootLayoutClient({
 
   return (
     <>
-      <Topmenu onBurgerClick={() => setIsSlideOpen(true)} />
       <Slidepage isOpen={isSlideOpen} onClose={() => setIsSlideOpen(false)}/>
+      <Topmenu onBurgerClick={() => setIsSlideOpen(true)} />
       <div>{children}</div>
     </>
   );
