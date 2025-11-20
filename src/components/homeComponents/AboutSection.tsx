@@ -1,6 +1,16 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function AboutSection() {
   return (
-    <div className="flex lg:flex-row flex-col w-full lg:px-40 md:px-20 px-10 space-y-4">
+    <motion.div
+      initial={{ opacity: 0, x: -100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      viewport={{ once: true }}
+      className="flex lg:flex-row flex-col w-full lg:px-40 md:px-20 px-10 space-y-4"
+    >
       <div className="flex w-full lg:w-1/3 md:text-4xl text-2xl font-bold text-white">
         <span className="md:h-15 h-10 border-b-4 text-nowrap">About me</span>
       </div>
@@ -16,6 +26,6 @@ export default function AboutSection() {
         improve user experiences. I’m also curious to learn new technologies and
         always ready to do the interesting things.
       </div>
-    </div>
+    </motion.div>
   );
 }
