@@ -1,12 +1,29 @@
-export default function Page() {
-  return (
-    <div className="flex flex-col w-full mt-20">
-      <div className="flex w-full justify-center md:text-6xl text-4xl font-bold">
-        About me
-      </div>
-      <div className="w-full h-96 bg-blue1">
+"use client"
+import { useState } from "react";
+import AyodiaCard from "@/src/components/experienceComponents/AyodiaCard";
+import BotnoiCard from "@/src/components/experienceComponents/BotnoiCard";
+import { motion } from "framer-motion";
 
+export default function Page() {
+  const [openCard, setOpenCard] = useState<string | null>(null);
+
+  return (
+    <div className="flex flex-col m-30 space-y-20">
+      <div className="flex md:text-6xl text-4xl text-blue1 font-bold md:w-[400px] md:h-[100px] h-[62px] w-[250px] md:border-b-5 border-b-4">
+        Experience
       </div>
+      <div className="flex flex-col space-y-10">
+        <AyodiaCard 
+          open={openCard === "ayodia"}
+          onOpen={() => setOpenCard(openCard === "ayodia" ? null : "ayodia")}
+        />
+
+        <BotnoiCard 
+          open={openCard === "botnoi"}
+          onOpen={() => setOpenCard(openCard === "botnoi" ? null : "botnoi")}
+        />
+      </div>
+      
     </div>
   );
 }

@@ -1,9 +1,15 @@
-import Goin from "../iconComponents/Goin";
-import Link from "next/link";
+"use client";
+import { motion } from "framer-motion";
 
 export default function ExperienceSection() {
   return (
-    <div className="flex lg:flex-row flex-col w-full lg:px-40 md:px-20 px-10 space-y-4">
+    <motion.div
+      initial={{ opacity: 0, x: 100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      viewport={{ once: true }}
+      className="flex lg:flex-row flex-col w-full lg:px-40 md:px-20 px-10 space-y-4"
+    >
       <div className="flex w-full lg:w-1/3 md:text-4xl text-2xl font-bold text-white">
         <span className="md:h-15 h-10 border-b-4 text-nowrap">Experience</span>
       </div>
@@ -52,16 +58,7 @@ export default function ExperienceSection() {
             </div>
           </div>
         </div>
-        <div className="flex w-full justify-center mb-20">
-          <Link
-            className="flex flex-row items-center space-x-2 bg-white py-5 px-10 rounded-3xl md:text-xl text-lg text-blue1 font-semibold shadow-2xl hover:bg-gray-100 hover:scale-110 duration-150 cursor-pointer"
-            href="/"
-          >
-            <Goin></Goin>
-            <span>see my experience</span>
-          </Link>
-        </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

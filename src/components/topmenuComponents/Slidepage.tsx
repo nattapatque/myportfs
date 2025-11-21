@@ -30,19 +30,47 @@ export default function Slidepage({ isOpen, onClose }: SlidePageProps) {
             Download Resume
           </div>
         </div>
-        <div className="flex flex-3 flex-col gap-10 md:text-8xl text-6xl font-bold md:items-start items-center">
-          <Link className="hover:scale-110 duration-150 cursor-pointer"
+        <div className="flex flex-3 flex-col gap-10 lg:text-8xl md:text-6xl text-4xl font-bold md:items-start items-center">
+          <Link
+            className="hover:scale-110 duration-150 cursor-pointer"
             href="/"
             onClick={onClose}
           >
+            <span className="lg:text-6xl md:text-4xl text-2xl text-gray-300">
+              1.{" "}
+            </span>{" "}
             Home
           </Link>
-          <div className="hover:scale-110 duration-150 cursor-pointer">
+          <Link
+            className="hover:scale-110 duration-150 cursor-pointer"
+            href="/experience"
+            onClick={onClose}
+          >
+            <span className="lg:text-6xl md:text-4xl text-2xl text-gray-300">
+              2.{" "}
+            </span>{" "}
             Experience
-          </div>
-          <div className="hover:scale-110 duration-150 cursor-pointer">
-            Contact
-          </div>
+          </Link>
+          <Link
+            className="hover:scale-110 duration-150 cursor-pointer"
+            href="/projects"
+            onClick={onClose}
+          >
+            <span className="lg:text-6xl md:text-4xl text-2xl text-gray-300">
+              3.{" "}
+            </span>{" "}
+            Projects
+          </Link>
+          {/* <Link
+            className="hover:scale-110 duration-150 cursor-pointer"
+            href="/"
+            onClick={onClose}
+          >
+            <span className="lg:text-6xl md:text-4xl text-2xl text-gray-300">
+              4.{" "}
+            </span>{" "}
+            Activity
+          </Link> */}
         </div>
       </div>
     </div>
