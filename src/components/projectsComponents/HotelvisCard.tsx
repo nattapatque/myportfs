@@ -32,35 +32,35 @@ export default function HotelvisCard() {
       <div className="flex flex-row flex-wrap space-x-4 space-y-4 md:justify-end justify-center">
             <div className="h-12 md:h-16">
             <img
-                className="w-full h-full"
+                className="w-full h-full object-contain"
                 src="/images/icons/react2.png"
                 alt="React"
             />
             </div>
             <div className="h-12 md:h-16">
             <img
-                className="w-full h-full"
+                className="w-full h-full object-contain"
                 src="/images/icons/nextjs.png"
                 alt="Next.js"
             />
             </div>
             <div className="max-w-16 md:max-w-20 h-12 md:h-16">
             <img
-                className="w-full h-full"
+                className="w-full h-full object-contain"
                 src="/images/icons/tailwind.png"
                 alt="Tailwind"
             />
             </div>
             <div className="h-12 md:h-16">
             <img
-                className="w-full h-full"
+                className="w-full h-full object-contain"
                 src="/images/icons/nodejs.png"
                 alt="NodeJS"
             />
             </div>
             <div className="h-12 md:h-16">
             <img
-                className="w-full h-full"
+                className="w-full h-full object-contain"
                 src="/images/icons/mongoDB.png"
                 alt="MongoDB"
             />

@@ -45,7 +45,7 @@ export default function AyodiaCard({ open, onOpen }: ExperienceCardProps) {
                 interaction between the medical device and the app.
               </div>
             </div>
-            <div className="flex flex-row flex-wrap space-x- justify-end">
+            <div className="flex flex-row flex-wrap justify-end">
               <div className="w-12 h-12 md:w-16 md:h-16">
                 <img
                   className="w-full h-full"
@@ -77,7 +77,7 @@ export default function AyodiaCard({ open, onOpen }: ExperienceCardProps) {
           <div className="flex md:w-[400px] w-[300px]">
             <img
               className="w-full h-full shadow-2xl"
-              src="/images/experience/VitalSign.png"
+              src="/images/Experience/VitalSign.png"
               alt="VitalSign"
             />
           </div>
