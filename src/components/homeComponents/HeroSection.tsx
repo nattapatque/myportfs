@@ -10,7 +10,7 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <div className="flex flex-col w-full h-screen">
-      <div className="flex flex-wrap w-full h-full px-20 pt-20">
+      <div className="flex flex-wrap w-full h-full md:px-20 px-5 pt-20">
         <div className="flex flex-1 items-center justify-center">
           <motion.div
             initial={{ opacity: 0, x: -200 }}
@@ -21,7 +21,7 @@ export default function HeroSection() {
           >
             <span className="md:text-3xl text-2xl font-bold">Hello! I'm </span>
             <br />
-            <span className="md:text-5xl text-4xl text-blue1 font-bold">
+            <span className="lg:text-6xl md:text-5xl text-4xl text-blue1 font-bold">
               Nattapat Daengkongkaew
             </span>
             <br />
@@ -39,11 +39,11 @@ export default function HeroSection() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="flex flex-col flex-1 items-center justify-center"
+          className="flex-col flex-1 items-center justify-center hidden md:flex"
         >
-          <div className="relative md:w-90 md:h-90 w-75 h-75 overflow-hidden rounded-4xl shadow-2xl bg-blue3 hover:scale-110 duration-150">
+          <div className="relative lg:w-90 lg:h-90 w-60 h-60 overflow-hidden rounded-4xl shadow-2xl bg-blue3 hover:scale-110 duration-150">
             <img
-              className="absolute top-10 left-0 w-full hover:scale-110 duration-150"
+              className="absolute top-10 left-0 w-full hover:scale-115 duration-150"
               src="/images/Me/norway1.png"
               alt="QUE"
             />
@@ -52,11 +52,11 @@ export default function HeroSection() {
       </div>
 
       <motion.div
-        initial={{ opacity: 0, x: -600 }}
+        initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="pb-10 pr-10 w-full flex flex-row items-center"
+        className="pb-10 md:pr-10 pr-0 w-full flex flex-row items-center"
       >
         <div className="h-1.5 w-full bg-blue3"></div>
         <div className="text-blue1 flex flex-row gap-5 px-10">

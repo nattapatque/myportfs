@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 export default function HotelvisCard() {
   return (
-    <div className="flex flex-col bg-white max-w-[600px] p-10 rounded-2xl shadow-xl md:space-y-10 space-y-5 relative hover:scale-105 duration-150">
+    <div className="flex flex-col bg-white max-w-[600px] p-10 rounded-2xl shadow-xl md:space-y-10 space-y-5 relative hover:scale-105 duration-150 overflow-hidden">
       <div className="absolute right-10">
-        <span className="flex justify-center w-45 text-[16px] font-medium bg-blue3 text-white rounded-xl shadow-xl">
+        <span className="flex justify-center w-45 md:text[16px] text-[14px] font-medium bg-blue1 text-white rounded-xl shadow-xl border-3 border-white">
           University Project
         </span>
       </div>
@@ -19,7 +19,7 @@ export default function HotelvisCard() {
         <div className="flex md:text-4xl text-2xl w-full justify-center font-bold">
           Hotelvis
         </div>
-        <div className="flex w-full items-center text-gray-700">
+        <div className="flex w-full items-center text-gray-700 md:text[16px] text-[14px]">
           Hotelvis is a hotel reservation web app developed as a first-year
           Software Engineering team project. It features hotel listings from a
           database with basic search and detail pages. I contributed to the UI
