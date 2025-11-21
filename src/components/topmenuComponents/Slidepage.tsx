@@ -61,7 +61,7 @@ export default function Slidepage({ isOpen, onClose }: SlidePageProps) {
             </span>{" "}
             Projects
           </Link>
-          <Link
+          {/* <Link
             className="hover:scale-110 duration-150 cursor-pointer"
             href="/"
             onClick={onClose}
@@ -70,7 +70,7 @@ export default function Slidepage({ isOpen, onClose }: SlidePageProps) {
               4.{" "}
             </span>{" "}
             Activity
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
