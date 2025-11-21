@@ -26,9 +26,13 @@ export default function Slidepage({ isOpen, onClose }: SlidePageProps) {
             Nattapat <br />
             Daengkongkaew
           </div>
-          <div className="bg-gradient-to-r from-blue3 to-blue2 text-white hover:scale-110 font-semibold px-5 py-3 cursor-pointer shadow-lg duration-150">
-            Download Resume
-          </div>
+          <a
+            href="/Resume.pdf"
+            target="blank"
+            className="bg-gradient-to-r from-blue3 to-blue2 text-white hover:scale-110 font-semibold px-5 py-3 cursor-pointer shadow-lg duration-150"
+          >
+            Let's see Resume
+          </a>
         </div>
         <div className="flex flex-3 flex-col gap-10 lg:text-8xl md:text-6xl text-4xl font-bold md:items-start items-center">
           <Link
