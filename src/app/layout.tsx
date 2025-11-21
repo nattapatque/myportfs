@@ -3,8 +3,8 @@ import "./globals.css";
 import RootLayoutClient from "../components/layoutComponents/RootLayoutClient";
 
 export const metadata: Metadata = {
-  title: "My Port",
-  description: "Welcome to my personal portfolio.",
+  title: "Nattapat-Que",
+  description: "Welcome to Que's personal portfolio.",
 };
 
 export default function RootLayout(
@@ -15,6 +15,7 @@ export default function RootLayout(
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/images/Me/Que.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link 

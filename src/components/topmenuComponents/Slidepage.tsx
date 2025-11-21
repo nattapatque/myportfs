@@ -10,9 +10,9 @@ export default function Slidepage({ isOpen, onClose }: SlidePageProps) {
   return (
     <div
       className={`fixed top-0 left-0 w-full h-full bg-blue1 z-31 transition-transform duration-500 ease-in-out text-white 
-            ${isOpen ? "translate-y-0" : "-translate-y-full"}`}
+            ${isOpen ? "translate-y-0" : "-translate-y-full"} overflow-y-auto`}
     >
-      <div className="h-[90px] w-full flex justify-end px-20">
+      <div className="h-[90px] w-full flex justify-end md:px-20 px-10 ">
         <button
           className="hover:scale-150 duration-150 cursor-pointer"
           onClick={onClose}
@@ -20,9 +20,9 @@ export default function Slidepage({ isOpen, onClose }: SlidePageProps) {
           <X />
         </button>
       </div>
-      <div className="p-6 md:flex-row flex-col flex w-full gap-15">
-        <div className="flex flex-col flex-1 items-center space-y-10">
-          <div className="text-xl font-semibold">
+      <div className="p-6 md:flex-row flex-col flex w-full md:gap-15 gap-8">
+        <div className="flex flex-col flex-1 items-center md:space-y-10 space-y-4">
+          <div className="text-xl font-semibold md:text-start text-center">
             Nattapat <br />
             Daengkongkaew
           </div>
