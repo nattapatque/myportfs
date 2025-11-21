@@ -53,13 +53,13 @@ export default function Slidepage({ isOpen, onClose }: SlidePageProps) {
           </Link>
           <Link
             className="hover:scale-110 duration-150 cursor-pointer"
-            href="/"
+            href="/projects"
             onClick={onClose}
           >
             <span className="lg:text-6xl md:text-4xl text-2xl text-gray-300">
               3.{" "}
             </span>{" "}
-            Project
+            Projects
           </Link>
           <Link
             className="hover:scale-110 duration-150 cursor-pointer"

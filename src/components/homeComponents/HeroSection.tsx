@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export default function HeroSection() {
   return (
     <div className="flex flex-col w-full h-screen">
-      <div className="flex flex-wrap w-full h-full bg-white px-20 pt-20">
+      <div className="flex flex-wrap w-full h-full px-20 pt-20">
         <div className="flex flex-1 items-center justify-center">
           <motion.div
             initial={{ opacity: 0, x: -200 }}
@@ -47,7 +47,7 @@ export default function HeroSection() {
         </motion.div>
       </div>
 
-      <div className="bg-white pb-10 px-20 w-full flex flex-col md:items-end items-center gap-5">
+      <div className="pb-10 px-20 w-full flex flex-col md:items-end items-center gap-5">
         <div className="text-blue2 md:text-xl text-lg flex">
           nattapat.daengkongkaew@gmail.com
         </div>
