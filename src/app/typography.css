@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-playfair);
+}
+
+@layer utilities {
+
+  .header-1 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .header-2 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .header-3 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .header-4 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .button-small {
+    font-family: var(--font-sans); 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .button-medium {
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .button-large {
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  
+  .text-12 {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5; 
+  }
+
+  .text-14 {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .text-16 {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .text-20 {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .text-24 {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  .text-30 {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .text-36 {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .text-42 {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 1.1;
+  }
+
+  .text-48 {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.1;
+  }
+
+  .text-60 {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1.1;
+  }
+}

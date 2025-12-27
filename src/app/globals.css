@@ -3,24 +3,32 @@
 :root {
   --background: #fbfaf2;
   --foreground: #171717;
-  --blue1: #1860c3;
-  --blue2: #3d80cb;
-  --blue3: #71a9db;
-  --yellow1: #ffbf6b;
-  --yellow2: #ffd6b3;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-yellow1: var(--yellow1);
-  --color-yellow2: var(--yellow2);
-  --color-blue1: var(--blue1);
-  --color-blue2: var(--blue2);
-  --color-blue3: var(--blue3);
-
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-black-1:
+  --color-black-2:
+  --color-black-3:
+  --color-black-4:
+  --color-black-5:
+  --color-white:
+
+  --color-purple-1:
+  --color-purple-2:
+  --color-purple-3:
+  --color-purple-4:
+  --color-purple-5:
+
+  --color-yellow-1:
+  --color-yellow-2:
+  --color-yellow-3:
+  --color-yellow-4:
+  --color-yellow-5:
 }
 
 body {
