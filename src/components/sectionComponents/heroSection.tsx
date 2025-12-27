@@ -5,7 +5,7 @@ import { PlayCircleOutlined } from "@ant-design/icons";
 export default function HeroSection() {
   return (
     <div className="w-full h-screen flex flex-col items-center justify-center space-y-7">
-      <span className="header-1 text-white">Hello</span>
+      <span className="header-1">Hello</span>
       <span className="header-1">
         I'm{" "}
         <span className="text-purple-1 hover:text-yellow-1 duration-150">
