@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import "./typography.css";
-import { Inter, Playfair_Display } from "next/font/google";
+import Image from "next/image";
+import { Lato, Playfair_Display } from "next/font/google";
+import Topmenu from "../components/topmenuComponents/Topmenu";
 
-const inter = Inter({
+const lato = Lato({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-lato",
   display: "swap",
+  weight: ["400", "700"],
 });
 
 const playfair = Playfair_Display({
@@ -27,12 +29,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </head>
-      <body className={`${inter.variable} ${playfair.variable} antialiased`}>
-        {children}
+      <body className={`${lato.variable} ${playfair.variable} antialiased`}>
+        <div className="fixed inset-0 -z-50 w-full h-full">
+          <Image
+            src="/images/bg.png" 
+            alt="Global Background"
+            fill
+            priority 
+            className="object-cover opacity-80"
+          />
+        </div>
+
+        <div className="relative z-0">
+          <Topmenu />
+          {children}
+        </div>
       </body>
     </html>
   );

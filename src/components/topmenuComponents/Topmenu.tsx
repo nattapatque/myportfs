@@ -1,21 +1,13 @@
 "use client"
-import Burger from "../iconComponents/Burger";
 
-type TopmenuProps = {
-    onBurgerClick: () => void;
-  };
-
-export default function Topmenu({onBurgerClick}:TopmenuProps) {
+export default function Topmenu() {
     return(
-        <div className="flex justify-between items-center md:px-20 px-10 h-[90px] text-blue2 fixed top-0 left-0 right-0 z-30">
-            <div className="font-bold hover:text-blue1">
-                
-            </div>
-            <div className="flex">
-                <div className="hover:text-blue1 cursor-pointer hover:scale-150 duration-150" onClick={onBurgerClick}>
-                    <Burger></Burger>  
-                </div>
-            </div>
+        <div className="absolute top-0 flex items-center justify-center space-x-6 bg-linear-to-b from-purple-1 to-purple-1/0 w-full h-[80px] ">
+            <div className="px-6 py-3 button-small text-white rounded-lg hover:text-yellow-1 hover:scale-130 duration-150 cursor-pointer">Home</div>
+            <div className="px-6 py-3 button-small text-white rounded-lg hover:text-yellow-1 hover:scale-130 duration-150 cursor-pointer">Skills</div>
+            <div className="px-6 py-3 button-small text-white rounded-lg hover:text-yellow-1 hover:scale-130 duration-150 cursor-pointer">Experience</div>
+            <div className="px-6 py-3 button-small text-white rounded-lg hover:text-yellow-1 hover:scale-130 duration-150 cursor-pointer">Projects</div>
+            <div className="px-6 py-3 button-small text-white rounded-lg hover:text-yellow-1 hover:scale-130 duration-150 cursor-pointer">Contact</div>
         </div>
     );
 }

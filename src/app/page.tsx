@@ -1,11 +1,9 @@
-import HeroSection from "../components/homeComponents/HeroSection";
+import HeroSection from "../components/sectionComponents/heroSection";
 
 export default function Home() {
   return (
-    <div className="flex flex-col space-y-40">
+    <div className="flex">
       <HeroSection></HeroSection>
-      {/* <AboutSection></AboutSection>
-      <ExperienceSection></ExperienceSection> */}
     </div>
   );
 }
