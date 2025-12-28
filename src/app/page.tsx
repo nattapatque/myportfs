@@ -2,6 +2,7 @@ import HeroSection from "../components/sectionComponents/heroSection";
 import SkillSection from "../components/sectionComponents/skillSection";
 import ExperienceSection from "../components/sectionComponents/experienceSection";
 import ProjectsSection from "../components/sectionComponents/projectsSection";
+import ContactSection from "../components/sectionComponents/contactSection";
 
 export default function Home() {
   return (
@@ -20,6 +21,10 @@ export default function Home() {
 
       <section id="projects">
         <ProjectsSection />
+      </section>
+
+      <section id="contact">
+        <ContactSection />
       </section>
     </div>
   );

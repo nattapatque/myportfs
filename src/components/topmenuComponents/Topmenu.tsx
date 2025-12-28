@@ -7,6 +7,7 @@ export default function Topmenu() {
     { name: "Skills", href: "#skills" }, 
     { name: "Experience", href: "#experience" }, 
     { name: "Projects", href: "#projects" }, 
+    { name: "Contact", href: "#contact"},
   ];
   return (
     <nav className="absolute top-0 flex items-center justify-center space-x-6 bg-linear-to-b from-purple-1 to-purple-1/0 w-full h-[80px]">
