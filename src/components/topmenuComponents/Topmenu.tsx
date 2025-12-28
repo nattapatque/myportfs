@@ -1,21 +1,32 @@
-"use client"
-import Burger from "../iconComponents/Burger";
+"use client";
+import Link from "next/link";
 
-type TopmenuProps = {
-    onBurgerClick: () => void;
-  };
-
-export default function Topmenu({onBurgerClick}:TopmenuProps) {
-    return(
-        <div className="flex justify-between items-center md:px-20 px-10 h-[90px] text-blue2 fixed top-0 left-0 right-0 z-30">
-            <div className="font-bold hover:text-blue1">
-                
-            </div>
-            <div className="flex">
-                <div className="hover:text-blue1 cursor-pointer hover:scale-150 duration-150" onClick={onBurgerClick}>
-                    <Burger></Burger>  
-                </div>
-            </div>
-        </div>
-    );
+export default function Topmenu() {
+  const menuItems = [
+    { name: "Home", href: "#hero" }, 
+    { name: "Skills", href: "#skills" }, 
+    { name: "Experience", href: "#experience" }, 
+    { name: "Projects", href: "#projects" }, 
+    { name: "Contact", href: "#contact"},
+  ];
+  return (
+    <nav className="absolute top-0 flex items-center justify-center space-x-6 bg-linear-to-b from-purple-1 to-purple-1/0 w-full h-[80px]">
+      {menuItems.map((item) => (
+        <Link 
+          key={item.name} 
+          href={item.href}
+          className="px-6 py-3 button-small text-white rounded-lg hover:text-yellow-1 hover:scale-130 duration-150 cursor-pointer"
+        >
+          {item.name}
+        </Link>
+      ))}
+      <a
+        href="/Resume.pdf"
+        target="blank"
+        className="button-small bg-transparent border-2 border-yellow-1 text-yellow-1 rounded-md hover:scale-110 px-5 py-3 cursor-pointer duration-150 hover:bg-yellow-1 hover:text-purple-1 hover:text-bold hover:shadow-[0_0_15px_rgba(255,195,0,0.5)] hover:translate-y-2"
+      >
+        Resume
+      </a>
+    </nav>
+  );
 }

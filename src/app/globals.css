@@ -1,63 +1,191 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fbfaf2;
-  --foreground: #171717;
-  --blue1: #1860c3;
-  --blue2: #3d80cb;
-  --blue3: #71a9db;
-  --yellow1: #ffbf6b;
-  --yellow2: #ffd6b3;
+  --background: #0a0a0c;
+  --foreground: #e0e0e0;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-yellow1: var(--yellow1);
-  --color-yellow2: var(--yellow2);
-  --color-blue1: var(--blue1);
-  --color-blue2: var(--blue2);
-  --color-blue3: var(--blue3);
 
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-black-1: #0a0a0c;
+  --color-black-2: #070709;
+  --color-black-3: #636364;
+  --color-black-4: #858586;
+  --color-black-5: #c2c2c2;
+  --color-white: #e0e0e0;
+
+  --color-purple-1: #7b2cbf;
+  --color-purple-2: #3e165f;
+  --color-purple-3: #5c218f;
+  --color-purple-4: #8e70a7;
+  --color-purple-5: #be96df;
+
+  --color-yellow-1: #ffc300;
+  --color-yellow-2: #7f6100;
+  --color-yellow-3: #bf9200;
+  --color-yellow-4: #bfa860;
+  --color-yellow-5: #ffe180;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Poppins", "Sarabun", sans-serif;
+  font-family: var(--font-lato);
 }
 
 @layer utilities {
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
+
+  .header-1 {
+    font-family: var(--font-playfair);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
   }
 
-  .typing {
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 2px solid;
-    animation: typing 3s steps(20, end), blink 0.75s step-end infinite;
+  .header-2 {
+    font-family: var(--font-playfair);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .header-3 {
+    font-family: var(--font-playfair);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .header-4 {
+    font-family: var(--font-playfair);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .button-small {
+    font-family: var(--font-lato); 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .button-medium {
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .button-large {
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  
+  .text-12 {
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5; 
+  }
+
+  .text-14 {
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .text-16 {
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .text-20 {
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .text-24 {
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  .text-30 {
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .text-36 {
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .text-42 {
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 1.1;
+  }
+
+  .text-48 {
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.1;
+  }
+
+  .text-60 {
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1.1;
+  }
+
+  @keyframes blob {
+    0% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(100px, -200px) scale(1.2); }
+    66% { transform: translate(-150px, 150px) scale(0.8); }
+    100% { transform: translate(0px, 0px) scale(1); }
+  }
+
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+  
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
   }
 }
 
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-5px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  .animate-fadeIn {
-    animation: fadeIn 0.5s ease-out;
-  }
-
+html {
+  scroll-behavior: smooth;
+}
