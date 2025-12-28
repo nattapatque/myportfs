@@ -20,6 +20,13 @@ export default function Topmenu() {
           {item.name}
         </Link>
       ))}
+      <a
+        href="/Resume.pdf"
+        target="blank"
+        className="button-small bg-transparent border-2 border-yellow-1 text-yellow-1 rounded-md hover:scale-110 px-5 py-3 cursor-pointer duration-150 hover:bg-yellow-1 hover:text-purple-1 hover:text-bold hover:shadow-[0_0_15px_rgba(255,195,0,0.5)] hover:translate-y-2"
+      >
+        Resume
+      </a>
     </nav>
   );
 }
