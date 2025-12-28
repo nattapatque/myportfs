@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { PlayCircleOutlined } from "@ant-design/icons";
 
@@ -19,12 +20,12 @@ export default function HeroSection() {
         creating.
       </div>
 
-      <div className="flex items-center justify-center px-10 py-6 border-2 border-yellow-1 rounded-xl">
+      <Link href="#skills" className="flex items-center justify-center px-10 py-6 border-2 border-yellow-1 rounded-xl cursor-pointer hover:scale-120 duration-150 hover:shadow-[0_0_15px_rgba(255,195,0,0.5)] bg-transparent active:bg-yellow-1 active:scale-90">
         <div className="flex flex-row items-center justify-center space-x-3">
           <PlayCircleOutlined className="text-[32px] !text-yellow-1"/>
           <div className="button-medium">Meet Your Next Favorite</div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 }
