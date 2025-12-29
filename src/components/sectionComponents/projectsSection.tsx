@@ -64,9 +64,9 @@ export default function ProjectsSection() {
   const [selectedTab, setSelectedTab] = useState(0);
 
   return (
-    <div className="w-full h-screen flex flex-col items-center justify-center space-y-7">
+    <div className="w-full min-h-screen flex flex-col items-center justify-center md:space-y-7 space-y-5 md:p-0 p-4 md:pt-0 pt-20">
       <div>
-        <div className="flex items-start gap-4 mb-20 header-1">PROJECTS</div>
+        <div className="flex items-start gap-4 mb-20 md:header-1 header-2">PROJECTS</div>
         <div className="flex flex-row gap-3 flex-wrap justify-center">
           <table className="min-w-[300px]">
             <thead>

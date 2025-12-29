@@ -15,14 +15,14 @@ export default function ContactSection() {
   ];
 
   return (
-    <div className="relative w-full h-[400px] overflow-hidden">
+    <div className="relative w-full h-[400px] overflow-hidden md:mt-0 mt-10">
       
       <div className="absolute bottom-0 w-full h-full">
         <Wave
           fill="#ffc300" 
           paused={false}
           options={{
-            height: 40,
+            height: 20,
             amplitude: 30,
             speed: 0.5,
             points: 50,
@@ -37,7 +37,7 @@ export default function ContactSection() {
           Get In Touch
         </h2>
 
-        <div className="flex gap-6 md:gap-8">
+        <div className="flex gap-2 md:gap-8">
           {contacts.map((item, index) => (
             <a
               key={index}

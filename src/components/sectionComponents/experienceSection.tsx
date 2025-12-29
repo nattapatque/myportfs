@@ -32,9 +32,9 @@ export default function ExperienceSection() {
   const [selectedTab, setSelectedTab] = useState(0);
 
   return (
-    <section className="w-full h-screen flex flex-col items-center justify-center space-y-7">
+    <section className="w-full min-h-screen flex flex-col items-center justify-center md:space-y-7 space-y-5 md:p-0 p-4">
       <div>
-        <div className="flex items-start gap-4 mb-20 header-1">EXPERIENCE</div>
+        <div className="flex items-start gap-4 mb-20 md:header-1 header-2">EXPERIENCE</div>
 
         <div className="flex flex-col md:flex-row gap-8">
           <div className="relative flex md:flex-col overflow-x-auto md:overflow-visible border-l-2 md:border-l-2 border-white/10 md:min-w-[200px]">
@@ -43,7 +43,7 @@ export default function ExperienceSection() {
                 key={index}
                 onClick={() => setSelectedTab(index)}
                 className={`
-                    relative px-5 py-3 text-left button-medium transition-all duration-300
+                    relative px-5 py-3 text-left md:button-medium button-small transition-all duration-300
                     whitespace-nowrap
                     ${
                       selectedTab === index
@@ -74,7 +74,7 @@ export default function ExperienceSection() {
                 exit={{ opacity: 0, x: -20 }}
                 transition={{ duration: 0.3 }}
               >
-                <h3 className="header-3 mb-1">
+                <h3 className="md:header-3 header-4 mb-1">
                   {experiences[selectedTab].role}{" "}
                   <span className="text-yellow-1">
                     @{" "}
@@ -89,7 +89,7 @@ export default function ExperienceSection() {
                   </span>
                 </h3>
 
-                <p className="text-16 mb-6">{experiences[selectedTab].date}</p>
+                <p className="md:text-16 text-14 mb-6">{experiences[selectedTab].date}</p>
 
                 <ul className="space-y-4">
                   {experiences[selectedTab].duties.map((duty, i) => (
@@ -98,7 +98,7 @@ export default function ExperienceSection() {
                       className="flex items-start gap-3 text-gray-300 leading-relaxed"
                     >
                       <span className="text-yellow-1 mt-1.5 text-xs">▹</span>
-                      <span className="text-16">{duty}</span>
+                      <span className="md:text-16 text-14">{duty}</span>
                     </li>
                   ))}
                 </ul>

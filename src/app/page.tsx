@@ -6,7 +6,7 @@ import ContactSection from "../components/sectionComponents/contactSection";
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col space-y-10">
       <section id="hero">
         <HeroSection />
       </section>
